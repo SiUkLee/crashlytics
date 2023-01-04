@@ -1,7 +1,13 @@
+import asyncio
+import json
 import os
-from fastapi import FastAPI, Body, File, UploadFile
+import uuid
+import subprocess
+
+from fastapi import FastAPI, Body, File, UploadFile, BackgroundTasks
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
+from fastapi.middleware.cors import CORSMiddleware
 
 from pydantic import BaseModel, Field
 from bson import ObjectId
@@ -45,7 +51,6 @@ import uvicorn
 # db = DataBase()
 
 
-
 # async def connect_to_mongo():
 #     print("connecting to mongo...")
 #
@@ -78,7 +83,60 @@ import uvicorn
 #     db.database.close()
 #     print("closed connection")
 
+async def schedule_symbolicate():
+    loop = asyncio.get_event_loop()
+    loop.create_task(symbolicate())
+
+async def symbolicate():
+    while True:
+        print("symbolicate")
+
+        client = MongoClient(
+            "mongodb+srv://siuklee:tldnr4655@cluster0.hukgpba.mongodb.net/?retryWrites=true&w=majority")
+
+        db = client['client']
+        collection = db['crash']
+        notSymbolicatedCrashReport = collection.find_one({"isSymbolicated": False})
+
+        filename = notSymbolicatedCrashReport["filename"]
+
+        UPLOAD_DIR = "./crashreport"  # 저장할 서버 경로
+
+        # out_file = open(os.path.join(UPLOAD_DIR, filename), "wb")
+        # subprocess.call("./retrace.sh %s" % filename, shell=True)
+        # os.system('sh retrace.sh %s' % filename)
+        return_value = os.popen('sh retrace.sh %s' % filename).read()
+        print("notSymbolicatedCrashReport")
+
+        SYMBOLICATED_DIR = "./symbolicated_crashreport"  # 저장할 서버 경로
+        with open(os.path.join(SYMBOLICATED_DIR, filename), "wb") as fp:
+            fp.write(bytes(return_value, 'utf-8'))  # 서버 로컬 스토리지에 저장 (쓰기)
+
+        # jsoncrashreport = {'uuid': uniqueIdentifier, 'filename': filename, 'isSymbolicated': False}
+        # crashreport = CrashReportModel(**jsoncrashreport)
+        # json_crashreport = jsonable_encoder(crashreport)
+        # collection.insert_one(json_crashreport)
+
+        client.close()
+
+        await asyncio.sleep(60)
+
 app = FastAPI()
+app.add_event_handler("startup", schedule_symbolicate)
+
+origins = [
+    "http://localhost:8086",
+    "http://127.0.0.1:8086"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # app.add_event_handler("startup", connect_to_mongo)
 # app.add_event_handler("shutdown", close_mongo_connection)
 
@@ -101,7 +159,9 @@ class PyObjectId(ObjectId):
 
 class CrashReportModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    content: str = Field(...)
+    uuid: str
+    filename: str
+    isSymbolicated: bool = False
 
     class Config:
         allow_population_by_field_name = True
@@ -109,7 +169,9 @@ class CrashReportModel(BaseModel):
         json_encoders = {ObjectId: str}
         schema_extra = {
             "example": {
-                "content": "test1111"
+                "uuid": "test1111",
+                "filename": "test1111",
+                "isSymbolicated": False
             }
         }
 
@@ -119,25 +181,68 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.post("/uploadReport",)
-async def report(crashReport: CrashReportModel = Body(...)):
-    # crashContent = await file.read()
+# @app.post("/uploadReport", )
+# async def report(crashReport: CrashReportModel = Body(...)):
+#     # crashContent = await file.read()
+#
+#     # collection = db.database['crash']
+#     # jsonCrashReport = jsonable_encoder(crashReport)
+#     # new_crashReport = await collection.insert_one(jsonCrashReport)
+#
+#     client = MongoClient(
+#         "mongodb+srv://siuklee:tldnr4655@cluster0.hukgpba.mongodb.net/?retryWrites=true&w=majority")
+#
+#     db = client['client']
+#     collection = db['crash']
+#     json_crashreport = jsonable_encoder(crashReport)
+#     new_crashreport = collection.insert_one(json_crashreport)
+#     created_crash = collection.find_one({"_id": new_crashreport.inserted_id})
+#
+#     client.close()
+#     return JSONResponse(
+#         content={"code": "0", "message": "success", "content": created_crash},
+#         status_code=200
+#     )
 
-    # collection = db.database['crash']
-    # jsonCrashReport = jsonable_encoder(crashReport)
-    # new_crashReport = await collection.insert_one(jsonCrashReport)
+
+@app.post("/upload")
+async def upload(file: UploadFile):
+    UPLOAD_DIR = "./crashreport"  # 저장할 서버 경로
+
+    content = await file.read()
+    # filename = f"{str(uuid.uuid4())}.xcrash"  #uuid로 유니크한 파일명으로 변경
+    uniqueIdentifier = str(uuid.uuid4())
+    filename = uniqueIdentifier + "_" + file.filename
+    with open(os.path.join(UPLOAD_DIR, filename), "wb") as fp:
+        fp.write(content)  # 서버 로컬 스토리지에 저장 (쓰기)
 
     client = MongoClient(
         "mongodb+srv://siuklee:tldnr4655@cluster0.hukgpba.mongodb.net/?retryWrites=true&w=majority")
 
     db = client['client']
     collection = db['crash']
-    json_crashreport = jsonable_encoder(crashReport)
-    new_crashreport = collection.insert_one(json_crashreport)
-    created_crash = collection.find_one({"_id": new_crashreport.inserted_id})
+    jsoncrashreport = {'uuid': uniqueIdentifier, 'filename': filename, 'isSymbolicated': False}
+    crashreport = CrashReportModel(**jsoncrashreport)
+    json_crashreport = jsonable_encoder(crashreport)
+    collection.insert_one(json_crashreport)
 
     client.close()
+
     return JSONResponse(
-        content={"code": "0", "message": "success", "content": created_crash},
+        content={"code": "0", "message": "success"},
         status_code=200
     )
+
+@app.get("/crashreport")
+async def getCrashReport():
+    client = MongoClient(
+        "mongodb+srv://siuklee:tldnr4655@cluster0.hukgpba.mongodb.net/?retryWrites=true&w=majority")
+
+    db = client['client']
+    collection = db['crash']
+    crashreports = list(collection.find())
+    return JSONResponse(
+        content={"code": "0", "message": "success", "crashreports": crashreports},
+        status_code=200
+    )
+
