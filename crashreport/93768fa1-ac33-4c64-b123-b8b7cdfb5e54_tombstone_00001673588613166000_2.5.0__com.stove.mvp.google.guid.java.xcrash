@@ -1,0 +1,897 @@
+{logcat=--------- tail end of log main (/system/bin/logcat -b main -d -v threadtime -t 200 --pid 21910 *:D)
+--------- beginning of main
+01-13 14:43:33.091 21910 21910 E mvp.google.gui: Not starting debugger since process cannot load the jdwp agent.
+01-13 14:43:33.092 21910 21910 E USNET   : USNET: appName: com.stove.mvp.google.guid
+01-13 14:43:33.093 21910 21910 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+01-13 14:43:33.094 21910 21910 D ActivityThread: setConscryptValidator
+01-13 14:43:33.094 21910 21910 D ActivityThread: setConscryptValidator - put
+01-13 14:43:33.107 21910 21910 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10889; state: ENABLED
+01-13 14:43:33.125 21910 21910 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+01-13 14:43:33.126 21910 21910 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+01-13 14:43:33.129 21910 21910 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+01-13 14:43:33.132 21910 21910 I FirebaseCrashlytics: Initializing Firebase Crashlytics 18.2.13 for com.stove.mvp.google.guid
+01-13 14:43:33.143 21910 21929 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:83 and remote module com.google.android.gms.measurement.dynamite:87
+01-13 14:43:33.143 21910 21929 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 87
+01-13 14:43:33.144 21910 21910 I FirebaseInitProvider: FirebaseApp initialization successful
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: Failed to auto initialize the Facebook SDK
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: A valid Facebook app client token must be set in the AndroidManifest.xml or set by calling FacebookSdk.setClientToken before initializing the sdk.
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at f.c.k0.n(:8)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at f.c.k0.m(Unknown Source:9)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at com.facebook.internal.FacebookInitProvider.onCreate(Unknown Source:8)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2516)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2486)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8308)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7810)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7564)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread.access$1700(ActivityThread.java:315)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2286)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.os.Looper.loopOnce(Looper.java:226)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.os.Looper.loop(Looper.java:313)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at android.app.ActivityThread.main(ActivityThread.java:8751)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at java.lang.reflect.Method.invoke(Native Method)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+01-13 14:43:33.145 21910 21910 I FacebookInitProvider: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1135)
+01-13 14:43:33.148 21910 21929 W System  : ClassLoader referenced unknown path: 
+01-13 14:43:33.158 21910 21929 W mvp.google.gui: ClassLoaderContext classpath size mismatch. expected=23, found=1 (DLC[];PCL[/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk*3990092409:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes2.dex*1116351097:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes3.dex*3858828902:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes4.dex*682165669:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes5.dex*397850630:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes6.dex*15477258:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes7.dex*916842723:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes8.dex*2665343550:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes9.dex*3234885127:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes10.dex*2237276243:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes11.dex*1351992178:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes12.dex*2433829303:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes13.dex*558733806:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes14.dex*3035887950:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes15.dex*2336241746:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes16.dex*1608669674:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes17.dex*710251083:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes18.dex*3145294397:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes19.dex*3810055426:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes20.dex*2911623969:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes21.dex*3824639535:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes22.dex*1188634817:/data/app/~~3DRNQB0gCaL4YaoCOuxIEw==/com.stove.mvp.google-zqlDKsDWChn0NltMaUZTzw==/base.apk!classes23.dex*4008247224] | DLC[];PCL[/data/app/~~ZKfLQ5JA2ESVnHkw_NwX2w==/com.stove.mvp.google.guid-4v1Z2mMHdil91xL1lfEeEw==/base.apk*3173922017])
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.162 21910 21910 D stove-sdk: observer((android.app.Activity?) -> kotlin.Unit)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 
+01-13 14:43:33.162 21910 21910 D stove-sdk: com.stove.view.ViewInitializer.onCreate(Unknown Source:5)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.162 21910 21910 D stove-sdk: observer(() -> kotlin.Unit)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 
+01-13 14:43:33.162 21910 21910 D stove-sdk: com.stove.view.ViewInitializer.onCreate(Unknown Source:15)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.162 21910 21910 D stove-sdk: observer((android.app.Activity?) -> kotlin.Unit)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 
+01-13 14:43:33.162 21910 21910 D stove-sdk: com.stove.push.firebase.PushInitializer.onCreate(Unknown Source:5)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.162 21910 21910 D stove-sdk: observer((android.app.Activity?) -> kotlin.Unit)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 
+01-13 14:43:33.162 21910 21910 D stove-sdk: com.stove.push.firebase.Firebase.<init>(Unknown Source:13)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.162 21910 21910 D stove-sdk: observer((android.app.Activity?) -> kotlin.Unit)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 
+01-13 14:43:33.162 21910 21910 D stove-sdk: com.stove.auth.ui.AuthUIInitializer.onCreate(Unknown Source:5)
+01-13 14:43:33.162 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.163 21910 21910 D stove-sdk: observer(() -> kotlin.Unit)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 
+01-13 14:43:33.163 21910 21910 D stove-sdk: com.stove.auth.ui.AuthUIInitializer.onCreate(Unknown Source:15)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.163 21910 21910 D stove-sdk: observer(() -> kotlin.Unit)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 
+01-13 14:43:33.163 21910 21910 D stove-sdk: com.stove.log.LogInitializer.onCreate(:1)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:33.163 21910 21910 D stove-sdk: Network queue init (f.b.d.p@acf9f5b)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 
+01-13 14:43:33.163 21910 21910 D stove-sdk: com.stove.base.network.NetworkInitializer.onCreate(Unknown Source:14)
+01-13 14:43:33.163 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:33.167 21910 21910 E mvp.google.gui: ----- class 'Lcom/stove/crashlytics/xcrash/NativeHandler;' cl=0x12e67360 -----
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   objectSize=236 (224 from super)
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   access=0x0000.0001
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   super='java.lang.Class<java.lang.Object>' (cl=0x0)
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   vtable (1 entries, 11 in super):
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      0: int com.stove.crashlytics.xcrash.NativeHandler.a(android.content.Context, f.g.c.b.g, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, int, int, int, boolean, boolean, boolean, boolean, boolean, int, java.lang.String[], f.g.c.b.f, boolean, boolean, boolean, int, int, int, boolean, boolean, f.g.c.b.f, f.g.c.b.f)
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   direct methods (4 entries):
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      0: void com.stove.crashlytics.xcrash.NativeHandler.<clinit>()
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      1: void com.stove.crashlytics.xcrash.NativeHandler.<init>()
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      2: int com.stove.crashlytics.xcrash.NativeHandler.nativeInit(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, int, int, int, boolean, boolean, boolean, boolean, boolean, int, java.lang.String[], boolean, boolean, int, int, int, boolean, boolean)
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      3: void com.stove.crashlytics.xcrash.NativeHandler.nativeNotifyJavaCrashed()
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   static fields (1 entries):
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      0: com.stove.crashlytics.xcrash.NativeHandler com.stove.crashlytics.xcrash.NativeHandler.a
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:   instance fields (2 entries):
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      0: boolean com.stove.crashlytics.xcrash.NativeHandler.b
+01-13 14:43:33.167 21910 21910 E mvp.google.gui:      1: boolean com.stove.crashlytics.xcrash.NativeHandler.c
+01-13 14:43:33.167 21910 21910 E mvp.google.gui: Failed to register native method com.stove.crashlytics.xcrash.NativeHandler.nativeTestCrash(I)V in base.apk
+01-13 14:43:33.167 21910 21910 E xcrash  : NativeHandler System.loadLibrary failed
+01-13 14:43:33.167 21910 21910 E xcrash  : java.lang.UnsatisfiedLinkError: JNI_ERR returned from JNI_OnLoad in "/data/app/~~ZKfLQ5JA2ESVnHkw_NwX2w==/com.stove.mvp.google.guid-4v1Z2mMHdil91xL1lfEeEw==/lib/arm64/libxcrash.so"
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at java.lang.Runtime.loadLibrary0(Runtime.java:1077)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at java.lang.Runtime.loadLibrary0(Runtime.java:998)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at java.lang.System.loadLibrary(System.java:1661)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.stove.crashlytics.xcrash.NativeHandler.a(Unknown Source:6)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.stove.crashlytics.Crashlytics.initialize(:8)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.stove.crashlytics.Crashlytics.initialize$default(Unknown Source:5)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.stove.crashlytics.CrashlyticsInitializer.onCreate(Unknown Source:61)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2516)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.content.ContentProvider.attachInfo(ContentProvider.java:2486)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread.installProvider(ActivityThread.java:8308)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7810)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7564)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread.access$1700(ActivityThread.java:315)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2286)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.os.Handler.dispatchMessage(Handler.java:106)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.os.Looper.loopOnce(Looper.java:226)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.os.Looper.loop(Looper.java:313)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at android.app.ActivityThread.main(ActivityThread.java:8751)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at java.lang.reflect.Method.invoke(Native Method)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+01-13 14:43:33.167 21910 21910 E xcrash  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1135)
+01-13 14:43:33.167 21910 21956 E SchedPolicy: Failed to find cgroup for tid 21910
+01-13 14:43:33.176 21910 21957 E SchedPolicy: Failed to find cgroup for tid 21910
+01-13 14:43:33.188 21910 21939 I TRuntime.CctTransportBackend: Making request to: https://crashlyticsreports-pa.googleapis.com/v1/firelog/legacy/batchlog
+01-13 14:43:33.197 21910 21953 E SchedPolicy: Failed to find cgroup for tid 21910
+01-13 14:43:33.198 21910 21953 I FA      : App measurement initialized, version: 75066
+01-13 14:43:33.198 21910 21953 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+01-13 14:43:33.199 21910 21953 I FA      : To enable faster debug mode event logging run:
+01-13 14:43:33.199 21910 21953 I FA      :   adb shell setprop debug.firebase.analytics.app com.stove.mvp.google.guid
+01-13 14:43:33.199 21910 21953 D FA      : Debug-level message logging enabled
+01-13 14:43:33.200 21910 21961 E SchedPolicy: Failed to find cgroup for tid 21910
+01-13 14:43:33.206 21910 21953 D FA      : Resetting session stitching token to not null
+01-13 14:43:33.248 21910 21953 D FA      : Connected to remote service
+01-13 14:43:33.280 21910 21963 E SchedPolicy: Failed to find cgroup for tid 21910
+01-13 14:43:35.436 21910 21939 I TRuntime.CctTransportBackend: Status Code: 200
+01-13 14:43:42.835 21910 22077 D OpenGLRenderer: RenderThread::requireGlContext()
+01-13 14:43:42.853 21910 22077 D OpenGLRenderer: RenderThread::setGrContext()
+01-13 14:43:42.858 21910 21910 I DecorView: [INFO] isPopOver=false, config=true
+01-13 14:43:42.858 21910 21910 I DecorView: updateCaptionType >> DecorView@ea12d85[], isFloating=false, isApplication=true, hasWindowControllerCallback=true, hasWindowDecorCaption=false
+01-13 14:43:42.858 21910 21910 D DecorView: setCaptionType = 0, this = DecorView@ea12d85[]
+01-13 14:43:42.859 21910 21910 I DecorView: getCurrentDensityDpi: from real metrics. densityDpi=480 msg=resources_loaded
+01-13 14:43:42.859 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:42.859 21910 21910 D stove-sdk: onNewIntent, intent(Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.stove.mvp.google.guid/com.stove.mvp.MainActivity bnds=[543,1039][789,1406] })
+01-13 14:43:42.859 21910 21910 D stove-sdk: 
+01-13 14:43:42.859 21910 21910 D stove-sdk: android.app.Activity.performCreate(Activity.java:8290)
+01-13 14:43:42.859 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:42.860 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:42.860 21910 21910 D stove-sdk: context(android.app.Application@2a73c4a) intent(Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.stove.mvp.google.guid/com.stove.mvp.MainActivity bnds=[543,1039][789,1406] })
+01-13 14:43:42.860 21910 21910 D stove-sdk: 
+01-13 14:43:42.860 21910 21910 D stove-sdk: com.stove.push.Push.handleIntent(Unknown Source:10)
+01-13 14:43:42.860 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:42.860 21910 21910 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10889; state: ENABLED
+01-13 14:43:42.876 21910 21910 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10889; state: ENABLED
+01-13 14:43:42.880 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:42.880 21910 21910 D stove-sdk: version_code : 11
+01-13 14:43:42.880 21910 21910 D stove-sdk: 
+01-13 14:43:42.880 21910 21910 D stove-sdk: e.n.b.j0.a(:1)
+01-13 14:43:42.880 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:42.881 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=com.stove.mvp.google.guid parent=null callers=com.android.internal.policy.DecorView.setVisibility:4295 android.app.ActivityThread.handleResumeActivity:5383 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+01-13 14:43:42.881 21910 21910 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@ea12d85[]
+01-13 14:43:42.882 21910 21953 I FA      : Tag Manager is not found and thus will not be used
+01-13 14:43:42.883 21910 21910 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+01-13 14:43:42.883 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: ignored. pkg=com.stove.mvp.google.guid parent=null callers=com.android.internal.policy.DecorView.hasMultiSplitHandlerInNonFreeformMode:891 com.android.internal.policy.DecorView.notifyKeepScreenOnChanged:885 android.view.ViewRootImpl.applyKeepScreenOnFlag:2945 android.view.ViewRootImpl.collectViewAttributes:2969 android.view.ViewRootImpl.setView:1558 
+01-13 14:43:42.885 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: setView = com.android.internal.policy.DecorView@ea12d85 TM=true
+01-13 14:43:42.885 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:42.885 21910 21910 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@ea12d85[MainActivity]
+01-13 14:43:42.887 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:42.887 21910 21910 D stove-sdk: safeInsetTop(80) safeInsetBottom(0) safeInsetLeft(0) safeInsetRight(0) 
+01-13 14:43:42.887 21910 21910 D stove-sdk: 
+01-13 14:43:42.887 21910 21910 D stove-sdk: e.b.f.h.onAttachedToWindow(Unknown Source:2)
+01-13 14:43:42.887 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:42.896 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=4 res=0x7 s={true -5476376640458737456} ch=true fn=-1
+01-13 14:43:42.897 21910 22077 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+01-13 14:43:42.897 21910 22077 D OpenGLRenderer: eglCreateWindowSurface
+01-13 14:43:42.899 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11442 android.view.ViewRootImpl.performTraversals:4198 android.view.ViewRootImpl.doTraversal:2924 
+01-13 14:43:42.899 21910 21910 D ViewRootImpl@e76dbdb[MainActivity]: Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+01-13 14:43:42.899 21910 21910 D ViewRootImpl@e76dbdb[MainActivity]: Creating frameCompleteCallback
+01-13 14:43:42.905 21910 22090 D ViewRootImpl@e76dbdb[MainActivity]: Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+01-13 14:43:42.918 21910 22077 D ViewRootImpl@e76dbdb[MainActivity]: Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+01-13 14:43:42.920 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:5000 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938 
+01-13 14:43:42.920 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: [DP] rdf()
+01-13 14:43:42.920 21910 21910 D ViewRootImpl@e76dbdb[MainActivity]: reportDrawFinished (fn: -1) 
+01-13 14:43:42.922 21910 21910 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.stove.mvp.google.guid/com.stove.mvp.MainActivity
+01-13 14:43:42.922 21910 21910 D InsetsSourceConsumer: ensureControlAlpha: for ITYPE_STATUS_BAR on com.stove.mvp.google.guid/com.stove.mvp.MainActivity
+01-13 14:43:42.923 21910 21953 D FA      : Connected to remote service
+01-13 14:43:42.929 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1 1
+01-13 14:43:42.930 21910 21910 D InputMethodManager: startInputInner - Id : 0
+01-13 14:43:42.930 21910 21910 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+01-13 14:43:42.933 21910 21910 D InputMethodManager: startInputInner - Id : 0
+01-13 14:43:42.936 21910 21910 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+01-13 14:43:42.936 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:42.936 21910 21910 D InsetsSourceConsumer: setRequestedVisible: visible=false, type=21, host=com.stove.mvp.google.guid/com.stove.mvp.MainActivity, from=android.view.InsetsSourceConsumer.hide:253 android.view.InsetsController.collectSourceControls:1215 android.view.InsetsController.controlAnimationUnchecked:1077 android.view.InsetsController.applyAnimation:1456 android.view.InsetsController.applyAnimation:1437 android.view.InsetsController.hide:1006 android.view.InsetsController.hide:981 android.view.ViewRootImpl.controlInsetsForCompatibility:3147 android.view.ViewRootImpl.performTraversals:3637 android.view.ViewRootImpl.doTraversal:2924 
+01-13 14:43:42.936 21910 21910 D InsetsSourceConsumer: setRequestedVisible: visible=false, type=20, host=com.stove.mvp.google.guid/com.stove.mvp.MainActivity, from=android.view.InsetsSourceConsumer.hide:253 android.view.InsetsController.collectSourceControls:1215 android.view.InsetsController.controlAnimationUnchecked:1077 android.view.InsetsController.applyAnimation:1456 android.view.InsetsController.applyAnimation:1437 android.view.InsetsController.hide:1006 android.view.InsetsController.hide:981 android.view.ViewRootImpl.controlInsetsForCompatibility:3147 android.view.ViewRootImpl.performTraversals:3637 android.view.ViewRootImpl.doTraversal:2924 
+01-13 14:43:42.937 21910 21910 D InsetsSourceConsumer: setRequestedVisible: visible=false, type=1, host=com.stove.mvp.google.guid/com.stove.mvp.MainActivity, from=android.view.InsetsSourceConsumer.hide:253 android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.hideDirectly:1473 android.view.InsetsController.controlAnimationUnchecked:1139 android.view.InsetsController.applyAnimation:1456 android.view.InsetsController.applyAnimation:1437 android.view.InsetsController.hide:1006 android.view.InsetsController.hide:981 android.view.ViewRootImpl.controlInsetsForCompatibility:3147 android.view.ViewRootImpl.performTraversals:3637 
+01-13 14:43:42.937 21910 21910 D InsetsSourceConsumer: setRequestedVisible: visible=false, type=0, host=com.stove.mvp.google.guid/com.stove.mvp.MainActivity, from=android.view.InsetsSourceConsumer.hide:253 android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.hideDirectly:1473 android.view.InsetsController.controlAnimationUnchecked:1139 android.view.InsetsController.applyAnimation:1456 android.view.InsetsController.applyAnimation:1437 android.view.InsetsController.hide:1006 android.view.InsetsController.hide:981 android.view.ViewRootImpl.controlInsetsForCompatibility:3147 android.view.ViewRootImpl.performTraversals:3637 
+01-13 14:43:42.941 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=4 res=0x1 s={true -5476376640458737456} ch=false fn=2
+01-13 14:43:47.707 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: ViewPostIme pointer 0
+01-13 14:43:47.707 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.725 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.733 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.742 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.745 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.745 21910 21910 I ViewRootImpl@e76dbdb[MainActivity]: ViewPostIme pointer 1
+01-13 14:43:47.745 21910 21910 I MSHandlerLifeCycle: isMultiSplitHandlerRequested: windowingMode=1 isFullscreen=true isPopOver=false isHidden=false skipActivityType=false isHandlerType=true this: DecorView@ea12d85[MainActivity]
+01-13 14:43:47.760 21910 21910 D stove-sdk: 🔥️
+01-13 14:43:47.760 21910 21910 D stove-sdk: activity(com.stove.mvp.MainActivity@88d2462) listener((com.stove.base.result.Result) -> kotlin.Unit)
+01-13 14:43:47.760 21910 21910 D stove-sdk: 
+01-13 14:43:47.760 21910 21910 D stove-sdk: f.g.h.h.onClick(:2)
+01-13 14:43:47.760 21910 21910 D stove-sdk: 🔥️️️️️️️️️️️
+01-13 14:43:47.760 21910 21910 D AndroidRuntime: Shutting down VM
+--------- tail end of log system (/system/bin/logcat -b system -d -v threadtime -t 50 --pid 21910 *:W)
+--------- tail end of log events (/system/bin/logcat -b events -d -v threadtime -t 50 --pid 21910 *:I)
+--------- beginning of events
+01-13 14:43:42.860 21910 21910 I wm_on_create_called: [25449198,com.stove.mvp.MainActivity,performCreate]
+01-13 14:43:42.880 21910 21910 I wm_on_start_called: [25449198,com.stove.mvp.MainActivity,handleStartActivity]
+01-13 14:43:42.881 21910 21910 I wm_on_resume_called: [25449198,com.stove.mvp.MainActivity,RESUME_ACTIVITY]
+01-13 14:43:42.886 21910 21910 I wm_on_top_resumed_gained_called: [25449198,com.stove.mvp.MainActivity,topStateChangedWhenResumed]
+01-13 14:43:42.923 21910 21910 I wm_on_idle_called: {com.stove.mvp.google.guid/com.stove.mvp.MainActivity}
+, App version=2.5.0, other threads=--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1167, name: GmsDynamite  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:442)
+    at java.lang.Object.wait(Object.java:568)
+    at f.d.a.c.f.a.run(Unknown Source:6)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1151, name: Jit thread pool worker thread 0  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1173, name: firebase-installations-executor-2  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1150, name: ReferenceQueueDaemon  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:442)
+    at java.lang.Object.wait(Object.java:568)
+    at java.lang.Daemons$ReferenceQueueDaemon.runInternal(Daemons.java:232)
+    at java.lang.Daemons$Daemon.run(Daemons.java:140)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1176, name: Firebase-Messaging-Topics-Io  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1176)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:905)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at f.d.a.c.d.p.h.b.run(Unknown Source:6)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1196, name: RenderThread  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1155, name: Binder:21910_2  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1192, name: OkHttp ConnectionPool  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at com.android.okhttp.ConnectionPool$1.run(ConnectionPool.java:106)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1172, name: awaitEvenIfOnMainThread task continuation executor1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at f.d.c.m.j.j.h0$a.a(Unknown Source:2)
+    at f.d.c.m.j.j.j.run(Unknown Source:5)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1199, name: InsetsAnimations  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at android.os.MessageQueue.nativePollOnce(Native Method)
+    at android.os.MessageQueue.next(MessageQueue.java:335)
+    at android.os.Looper.loopOnce(Looper.java:186)
+    at android.os.Looper.loop(Looper.java:313)
+    at android.os.HandlerThread.run(HandlerThread.java:67)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1188, name: Measurement Worker  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:442)
+    at ip.run(:com.google.android.gms.dynamite_measurementdynamite@225014045@22.50.14 (190408-0):7)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1183, name: Thread-6  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:549)
+    at f.b.d.j.a(Unknown Source:2)
+    at f.b.d.j.run(Unknown Source:5)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1202, name: Binder:21910_4  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1154, name: Binder:21910_1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1195, name: Binder:21910_3  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1153, name: FinalizerWatchdogDaemon  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Thread.sleep(Native Method)
+    at java.lang.Thread.sleep(Thread.java:450)
+    at java.lang.Thread.sleep(Thread.java:355)
+    at java.lang.Daemons$FinalizerWatchdogDaemon.sleepForNanos(Daemons.java:438)
+    at java.lang.Daemons$FinalizerWatchdogDaemon.waitForProgress(Daemons.java:480)
+    at java.lang.Daemons$FinalizerWatchdogDaemon.runInternal(Daemons.java:369)
+    at java.lang.Daemons$Daemon.run(Daemons.java:140)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1182, name: Thread-5  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:549)
+    at f.b.d.j.a(Unknown Source:2)
+    at f.b.d.j.run(Unknown Source:5)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1181, name: Thread-4  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:549)
+    at f.b.d.d.a(Unknown Source:2)
+    at f.b.d.d.run(Unknown Source:24)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1189, name: DefaultDispatcher-worker-1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:357)
+    at h.a.x1.a$a.run(:12)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1162, name: ScionFrontendApi  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1190, name: DefaultDispatcher-worker-2  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:357)
+    at h.a.x1.a$a.run(:12)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1174, name: pool-7-thread-1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1203, name: process reaper  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+    at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:463)
+    at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+    at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:939)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1194, name: Okio Watchdog  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at com.android.okhttp.okio.AsyncTimeout.awaitTimeout(AsyncTimeout.java:325)
+    at com.android.okhttp.okio.AsyncTimeout.access$000(AsyncTimeout.java:42)
+    at com.android.okhttp.okio.AsyncTimeout$Watchdog.run(AsyncTimeout.java:288)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1169, name: com.google.firebase.crashlytics.startup1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at f.d.c.m.j.j.h0$a.a(Unknown Source:2)
+    at f.d.c.m.j.j.j.run(Unknown Source:5)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1193, name: queued-work-looper  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at android.os.MessageQueue.nativePollOnce(Native Method)
+    at android.os.MessageQueue.next(MessageQueue.java:335)
+    at android.os.Looper.loopOnce(Looper.java:186)
+    at android.os.Looper.loop(Looper.java:313)
+    at android.os.HandlerThread.run(HandlerThread.java:67)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1197, name: hwuiTask1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1198, name: hwuiTask0  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1152, name: FinalizerDaemon  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at java.lang.Object.wait(Native Method)
+    at java.lang.Object.wait(Object.java:442)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:203)
+    at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:224)
+    at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:300)
+    at java.lang.Daemons$Daemon.run(Daemons.java:140)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1157, name: Profile Saver  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1184, name: Thread-7  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:549)
+    at f.b.d.j.a(Unknown Source:2)
+    at f.b.d.j.run(Unknown Source:5)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1148, name: Signal Catcher  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1149, name: HeapTaskDaemon  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1175, name: Firebase-Messaging-Init  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1176)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:905)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at f.d.a.c.d.p.h.b.run(Unknown Source:6)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1160, name: queued-work-looper-data  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1178, name: heartbeat-information-executor  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1185, name: Thread-8  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:549)
+    at f.b.d.j.a(Unknown Source:2)
+    at f.b.d.j.run(Unknown Source:5)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1170, name: firebase-installations-executor-1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+    at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:458)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at java.lang.Thread.run(Thread.java:1012)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 21910, tid: 1166, name: Crashlytics Exception Handler1  >>> com.stove.mvp.google.guid <<<
+
+java stacktrace:
+    at jdk.internal.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1063)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1123)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+    at f.d.c.m.j.j.h0$a.a(Unknown Source:2)
+    at f.d.c.m.j.j.j.run(Unknown Source:5)
+    at java.lang.Thread.run(Thread.java:1012)
+
+total JVM threads (exclude the crashed thread): 39
+dumped JVM threads:39
+, pid=21910, foreground=yes, java stacktrace=java.lang.ArrayIndexOutOfBoundsException: length=7; index=7
+	at f.g.h.h.onClick(:2)
+	at android.view.View.performClick(View.java:7792)
+	at android.widget.TextView.performClick(TextView.java:16112)
+	at com.google.android.material.button.MaterialButton.performClick(Unknown Source:3)
+	at android.view.View.performClickInternal(View.java:7769)
+	at android.view.View.access$3800(View.java:910)
+	at android.view.View$PerformClick.run(View.java:30218)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loopOnce(Looper.java:226)
+	at android.os.Looper.loop(Looper.java:313)
+	at android.app.ActivityThread.main(ActivityThread.java:8751)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1135)
+, tid=21910, Crash type=java, App ID=com.stove.mvp.google.guid, user_info=member_no_123123123
+, open files=fd 0: /dev/null
+fd 1: /dev/null
+fd 2: /dev/null
+fd 3: pipe:[54658604]
+fd 4: pipe:[54658604]
+fd 5: /sys/kernel/tracing/trace_marker
+fd 6: anon_inode:[eventfd]
+fd 7: /apex/com.android.art/javalib/core-oj.jar
+fd 8: /apex/com.android.art/javalib/core-libart.jar
+fd 9: /apex/com.android.art/javalib/okhttp.jar
+fd 10: /apex/com.android.art/javalib/bouncycastle.jar
+fd 11: /apex/com.android.art/javalib/apache-xml.jar
+fd 12: /system/framework/framework.jar
+fd 13: /system/framework/framework-graphics.jar
+fd 14: /dev/null
+fd 15: /system/framework/ext.jar
+fd 16: /system/framework/telephony-common.jar
+fd 17: /system/framework/voip-common.jar
+fd 18: /dev/null
+fd 19: /system/framework/ims-common.jar
+fd 20: /system/framework/knoxsdk.jar
+fd 21: /system/framework/knoxanalyticssdk.jar
+fd 22: /system/framework/uibc_java.jar
+fd 23: /system/framework/SmpsManager.jar
+fd 24: /system/framework/esecomm.jar
+fd 25: /system/framework/sem-telephony-common.jar
+fd 26: /apex/com.android.i18n/javalib/core-icu4j.jar
+fd 27: /apex/com.android.appsearch/javalib/framework-appsearch.jar
+fd 28: /apex/com.android.conscrypt/javalib/conscrypt.jar
+fd 29: /apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar
+fd 30: /apex/com.android.media/javalib/updatable-media.jar
+fd 31: /apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar
+fd 32: /apex/com.android.os.statsd/javalib/framework-statsd.jar
+fd 33: /apex/com.android.permission/javalib/framework-permission.jar
+fd 34: /apex/com.android.permission/javalib/framework-permission-s.jar
+fd 35: /apex/com.android.scheduling/javalib/framework-scheduling.jar
+fd 36: /apex/com.android.sdkext/javalib/framework-sdkextensions.jar
+fd 37: /apex/com.android.tethering/javalib/framework-connectivity.jar
+fd 38: /apex/com.android.tethering/javalib/framework-tethering.jar
+fd 39: /apex/com.android.wifi/javalib/framework-wifi.jar
+fd 40: /apex/com.samsung.android.ipm/javalib/framework-samsung-ipm.jar
+fd 41: /apex/com.samsung.android.shell/javalib/framework-samsung-privilege.jar
+fd 42: /dev/null
+fd 43: /system/framework/framework-res.apk
+fd 44: /product/overlay/GmsConfigOverlayCommon.apk
+fd 45: /product/overlay/GmsConfigOverlayGSA.apk
+fd 46: /product/overlay/GmsConfigOverlayGeotz.apk
+fd 47: /product/overlay/GoogleExtServicesConfigOverlay.apk
+fd 48: /product/overlay/GooglePermissionControllerFrameworkOverlay.apk
+fd 49: /product/overlay/ModuleMetadataGoogleOverlay.apk
+fd 50: /vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+fd 51: /product/overlay/framework-res__auto_generated_rro_product.apk
+fd 52: /dev/urandom
+fd 53: /dev/null
+fd 54: /dev/null
+fd 55: /dev/null
+fd 56: /dev/null
+fd 57: socket:[54658605]
+fd 58: /dev/pmsg0
+fd 59: /dev/binderfs/binder
+fd 60: anon_inode:[eventfd]
+fd 61: anon_inode:[eventpoll]
+fd 62: socket:[54658606]
+fd 63: /dev/ashmem13be629e-7cc3-4d4e-89a0-4acbb96da11c
+fd 64: /data/app/~~ZKfLQ5JA2ESVnHkw_NwX2w==/com.stove.mvp.google.guid-4v1Z2mMHdil91xL1lfEeEw==/base.apk
+fd 65: /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+fd 66: /dev/ashmem13be629e-7cc3-4d4e-89a0-4acbb96da11c
+fd 67: /data/data/com.stove.mvp.google.guid/databases/com.google.android.datatransport.events
+fd 68: /data/app/~~Wb3jrNjTNnhOnrnDbjHwJA==/com.google.android.gms-Ezl0kMtmxBsXC0TB800i8g==/base.apk
+fd 69: /data/app/~~ZKfLQ5JA2ESVnHkw_NwX2w==/com.stove.mvp.google.guid-4v1Z2mMHdil91xL1lfEeEw==/base.apk
+fd 70: /data/app/~~Wb3jrNjTNnhOnrnDbjHwJA==/com.google.android.gms-Ezl0kMtmxBsXC0TB800i8g==/split_config.en.apk
+fd 71: /data/app/~~Wb3jrNjTNnhOnrnDbjHwJA==/com.google.android.gms-Ezl0kMtmxBsXC0TB800i8g==/split_config.ja.apk
+fd 72: /data/app/~~Wb3jrNjTNnhOnrnDbjHwJA==/com.google.android.gms-Ezl0kMtmxBsXC0TB800i8g==/split_config.ko.apk
+fd 73: /data/user_de/0/com.google.android.gms/app_chimera/m/00000174/MeasurementDynamite.apk
+fd 74: socket:[54637494]
+fd 75: socket:[54637502]
+fd 76: anon_inode:[eventfd]
+fd 77: anon_inode:[eventpoll]
+fd 78: pipe:[54637509]
+fd 79: pipe:[54637509]
+fd 80: anon_inode:[eventpoll]
+fd 81: /dev/mali0
+fd 82: anon_inode:[eventfd]
+fd 83: socket:[54658672]
+fd 84: socket:[54658673]
+fd 85: anon_inode:[eventfd]
+fd 86: anon_inode:[eventfd]
+fd 87: anon_inode:malitl_21910_0xb4000074d9365480
+fd 88: anon_inode:malitl_21910_0xb40000753935f428
+fd 89: /dev/ashmem13be629e-7cc3-4d4e-89a0-4acbb96da11c
+fd 90: /data/data/com.stove.mvp.google.guid/files/.com.google.firebase.crashlytics.files.v2:com.stove.mvp.google.guid/open-sessions/63C0EF85008B000155966176DCC49258/userlog
+fd 91: socket:[54658676]
+fd 92: socket:[54658677]
+fd 93: /dev/binderfs/hwbinder
+fd 94: socket:[54664491]
+fd 95: anon_inode:malitl_21910_0xb400007539363bd0
+fd 96: /dev/binderfs/hwbinder
+fd 97: /sys/kernel/tracing/trace_marker
+fd 98: /dmabuf:
+fd 99: /dmabuf:
+fd 100: /dev/ion
+fd 101: anon_inode:21910
+fd 102: /dmabuf:
+fd 103: /dmabuf:
+fd 104: anon_inode:[eventfd]
+fd 105: socket:[54665228]
+fd 106: /dmabuf:
+fd 107: /dmabuf:
+fd 108: /dmabuf:
+fd 109: /dmabuf:
+fd 110: /data/data/com.stove.mvp.google.guid/files/tombstones/tombstone_00001673588613166000_2.5.0__com.stove.mvp.google.guid.java.xcrash
+fd 111: socket:[54650696]
+fd 112: anon_inode:[eventpoll]
+fd 113: anon_inode:sync_file
+fd 114: ???
+fd 115: socket:[54658680]
+fd 116: socket:[54658681]
+fd 117: anon_inode:sync_file
+fd 119: anon_inode:sync_file
+fd 120: anon_inode:sync_file
+fd 121: anon_inode:sync_file
+fd 122: anon_inode:sync_file
+fd 123: anon_inode:sync_file
+fd 124: anon_inode:sync_file
+fd 125: anon_inode:sync_file
+fd 126: anon_inode:sync_file
+fd 127: anon_inode:sync_file
+fd 128: anon_inode:sync_file
+fd 129: anon_inode:sync_file
+fd 130: anon_inode:sync_file
+fd 132: anon_inode:sync_file
+fd 134: anon_inode:sync_file
+fd 135: anon_inode:sync_file
+fd 136: anon_inode:sync_file
+fd 137: anon_inode:sync_file
+fd 138: anon_inode:sync_file
+fd 140: anon_inode:sync_file
+fd 141: pipe:[54664532]
+fd 142: pipe:[54664532]
+fd 143: anon_inode:sync_file
+fd 144: anon_inode:sync_file
+fd 146: anon_inode:sync_file
+(number of FDs: 142)
+, Manufacturer=samsung, Tombstone maker=xCrash 3.1.0, Rooted=No, pname=com.stove.mvp.google.guid, Crash time=2023-01-13T14:43:47.761+0900, OS version=12, tname=main , Brand=samsung, Build fingerprint=samsung/o1sksx/o1s:12/SP1A.210812.016/G991NKSS3CVI3:user/release-keys, Model=SM-G991N, ABI list=arm64-v8a,armeabi-v7a,armeabi, memory info= System Summary (From: /proc/meminfo)
+  MemTotal:        7374108 kB
+  MemFree:          210080 kB
+  MemAvailable:    2895232 kB
+  Buffers:            4144 kB
+  Cached:          2838172 kB
+  SwapCached:       120400 kB
+  Active:          2078072 kB
+  Inactive:        1631504 kB
+  Active(anon):     901672 kB
+  Inactive(anon):   808092 kB
+  Active(file):    1176400 kB
+  Inactive(file):   823412 kB
+  Unevictable:        3840 kB
+  Mlocked:            3840 kB
+  RbinTotal:        804864 kB
+  RbinAlloced:           0 kB
+  RbinPool:              0 kB
+  RbinFree:           2632 kB
+  RbinCached:       802232 kB
+  ZeroedFree:        30080 kB
+  SwapTotal:       4194300 kB
+  SwapFree:        2112476 kB
+  Dirty:               380 kB
+  Writeback:             0 kB
+  AnonPages:       1629400 kB
+  Mapped:           975952 kB
+  Shmem:             37540 kB
+  KReclaimable:     208120 kB
+  Slab:             484116 kB
+  SReclaimable:      89308 kB
+  SUnreclaim:       394808 kB
+  KernelStack:       69584 kB
+  ShadowCallStack:   17404 kB
+  PageTables:       137448 kB
+  NFS_Unstable:          0 kB
+  Bounce:                0 kB
+  WritebackTmp:          0 kB
+  CommitLimit:     7478920 kB
+  Committed_AS:   134828820 kB
+  VmallocTotal:   262930368 kB
+  VmallocUsed:      244268 kB
+  VmallocChunk:          0 kB
+  Percpu:            16448 kB
+  AnonHugePages:     40960 kB
+  ShmemHugePages:        0 kB
+  ShmemPmdMapped:        0 kB
+  HugepagePool:          0 kB
+  FileHugePages:         0 kB
+  FilePmdMapped:         0 kB
+  CmaTotal:         249856 kB
+  CmaFree:              68 kB
+-
+ Process Status (From: /proc/PID/status)
+  Name:	mvp.google.guid
+  Umask:	0077
+  State:	R (running)
+  Tgid:	21910
+  Ngid:	0
+  Pid:	21910
+  PPid:	1005
+  TracerPid:	0
+  Uid:	10889	10889	10889	10889
+  Gid:	10889	10889	10889	10889
+  FDSize:	256
+  Groups:	3003 9997 20889 50889
+  VmPeak:	17002240 kB
+  VmSize:	16985012 kB
+  VmLck:	       0 kB
+  VmPin:	       0 kB
+  VmHWM:	  187744 kB
+  VmRSS:	  187248 kB
+  RssAnon:	   52680 kB
+  RssFile:	  133356 kB
+  RssShmem:	    1212 kB
+  VmData:	 1308528 kB
+  VmStk:	    8192 kB
+  VmExe:	      12 kB
+  VmLib:	  171548 kB
+  VmPTE:	    1528 kB
+  VmSwap:	   25996 kB
+  CoreDumping:	0
+  THP_enabled:	1
+  Threads:	54
+  SigQ:	0/21250
+  SigPnd:	0000000000000000
+  ShdPnd:	0000000000000000
+  SigBlk:	0000000080001204
+  SigIgn:	0000000000000001
+  SigCgt:	0000006e400084f8
+  CapInh:	0000000000000000
+  CapPrm:	0000000000000000
+  CapEff:	0000000000000000
+  CapBnd:	0000000000000000
+  CapAmb:	0000000000000000
+  NoNewPrivs:	0
+  Seccomp:	2
+  Speculation_Store_Bypass:	thread vulnerable
+  Cpus_allowed:	ff
+  Cpus_allowed_list:	0-7
+  Mems_allowed:	1
+  Mems_allowed_list:	0
+  voluntary_ctxt_switches:	267
+  nonvoluntary_ctxt_switches:	40
+-
+ Process Limits (From: /proc/PID/limits)
+  Limit                     Soft Limit           Hard Limit           Units
+  Max cpu time              unlimited            unlimited            seconds
+  Max file size             unlimited            unlimited            bytes
+  Max data size             unlimited            unlimited            bytes
+  Max stack size            8388608              unlimited            bytes
+  Max core file size        0                    unlimited            bytes
+  Max resident set          unlimited            unlimited            bytes
+  Max processes             21250                21250                processes
+  Max open files            32768                32768                files
+  Max locked memory         67108864             67108864             bytes
+  Max address space         unlimited            unlimited            bytes
+  Max file locks            unlimited            unlimited            locks
+  Max pending signals       21250                21250                signals
+  Max msgqueue size         819200               819200               bytes
+  Max nice priority         40                   40
+  Max realtime priority     0                    0
+  Max realtime timeout      unlimited            unlimited            us
+-
+ Process Summary (From: android.os.Debug.MemoryInfo)
+                       Pss(KB)
+                        ------
+           Java Heap:     8920
+         Native Heap:    23384
+                Code:    10288
+               Stack:     1160
+            Graphics:    22474
+       Private Other:     2124
+              System:    11865
+               TOTAL:    80215           TOTAL SWAP:    25660
+, network info=Not supported on Android Q (API level 29) and later.
+, Start time=2023-01-13T14:43:33.166+0900, API level=31}
